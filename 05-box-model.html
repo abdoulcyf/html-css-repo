@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Box Model Exercice</title>
+
+  <style>
+    .back-button{
+      background-color: rgb(242, 239, 236);
+      margin: 1px 10px 1px 10px;
+      padding: 10px 5px 10px 5px;
+      border: 1px solid black;
+      vertical-align: top;
+    }
+
+    .num-button{
+      padding: 10px 5px 10px 5px;
+      border: none;
+      background-color: transparent;
+      text-decoration: aliceblue;
+      text-decoration: underline;
+      color: rgb(124, 184, 29);
+      vertical-align: top;
+    }
+
+    .next-button{
+      background-color: rgb(242, 239, 236);
+      margin: 1px 10px 1px 5px;
+      padding: 10px 5px 10px 5px;
+      border: 1px solid black;
+      vertical-align: top;
+    }
+
+    .stretch-button{
+      display: flex;
+      margin-top: 10px;
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 15px 10px 15px;
+      cursor: pointer;
+      font-stretch: condensed;
+    }
+
+    .stretch-button:hover{
+      font-stretch: normal;
+    }
+
+    .shadow-button{
+      color: white;
+      margin-top: 10px;
+      margin-right: 20px;
+      background-color: green;
+      border: none;
+      padding: 10px 15px 10px 15px;
+      cursor: pointer;
+    }
+
+    .shadow-button:hover{
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 00.15);
+    }
+
+    .one-button{
+      color: white;
+      margin-top: 10px;
+      margin-right: 20px;
+      background-color: green;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px 10px 15px;
+      font-stretch:ultra-condensed;
+    }
+
+    .one-button:hover{
+      font-stretch: ultra-expanded;
+    }
+
+    .two-button{
+      color: white;
+      margin-top: 10px;
+      margin-right: 20px;
+      background-color: green;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px 10px 15px;
+      font-stretch:ultra-condensed;
+    }
+
+    .three-button{
+      color: white;
+      margin-top: 10px;
+      background-color: green;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px 10px 15px;
+      font-stretch:ultra-condensed;
+    }
+
+
+  </style>
+</head>
+
+<body>
+ <button class="back-button">Back</button>
+ <button class="num-button">1</button>
+ <button class="num-button">2</button>
+ <button class="num-button">3</button>
+ <button class="num-button">4</button>
+ <button class="num-button">5</button>
+ <button class="next-button">Next</button>
+
+ <button class="stretch-button">Stretch</button>
+
+ <button class="shadow-button">Shadow</button>
+
+ <button class="one-button"></button>
+ <button class="two-button"></button>
+ <button class="three-button"></button>
+</body>
+
+<script>
+
+let buttonElement = document.querySelector('.stretch-button');
+
+buttonElement.style.backgroundColor= 'black'
+buttonElement.fontStretch='expanded'
+
+let shadowBtnElement = document.querySelector('.shadow-button');
+shadowBtnElement.style.backgroundColor = 'green'
+
+let oneBtnElment = document.querySelector('.one-button');
+oneBtnElment.innerHTML = 'One';
+oneBtnElment.style.backgroundColor ='green'
+oneBtnElment.style.color='white'
+
+
+let twoBtnElment = document.querySelector('.two-button');
+twoBtnElment.innerHTML = 'Two';
+twoBtnElment.style.backgroundColor ='green'
+twoBtnElment.style.color='white'
+
+let threeBtnElment = document.querySelector('.three-button');
+threeBtnElment.innerHTML = 'Three';
+threeBtnElment.style.backgroundColor ='green'
+threeBtnElment.style.color='white'
+
+
+
+</script>
+</html>
