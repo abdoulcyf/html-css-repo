@@ -1,3 +1,9 @@
+p{
+  font-family: Roboto, arial;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .first-img{
   width: 300px;
   display: block;
@@ -8,12 +14,12 @@
 }
 
 .video-title{
-  width: 300px;
+ margin-top: 0px;
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 20px;
+ margin-bottom: 12px;
 }
-
-/* .video-author, .video-stats{
-  display: block;
-} */
 
 .video-preview{
   width: 300px;
@@ -21,4 +27,40 @@
   vertical-align: top;
   margin-right: 15px;
 
+}
+
+.profile-pic,
+.profile-pic2{
+  width: 35px;
+  height: 35px;
+  border-radius: 0px;
+  border-radius: 50px;
+}
+
+.profile-picture,
+.profile-picture2{
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+}
+
+
+.video-info{
+  display: inline-block;
+  width: 200px;
+}
+
+.first-img-row,
+.second-img-row{
+  margin-bottom: 12px;
+}
+
+.video-author,
+.video-stats{
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author{
+  margin-bottom: 4px;
 }
