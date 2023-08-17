@@ -3,6 +3,10 @@
 
 <head>
   <style>
+
+    .oliver-info, .mimi-info{
+      display: block;
+    }
     .oliver {
       display: inline-block;
       vertical-align: top;
@@ -30,6 +34,22 @@
       margin-left: 5px;
     }
 
+    .mimi-d{
+      display: inline-block;
+      vertical-align: top;
+      width: 100px;
+      line-height: 12px;
+      margin-left: 5px;
+    }
+
+    .rex-d{
+      display: inline-block;
+      vertical-align: top;
+      width: 115px;
+      line-height: 12px;
+      margin-left: 5px;
+    }
+
     .oliver-n{
       font-weight: bold;
       font-family: arial;
@@ -37,6 +57,13 @@
     }
 
     .oliver-s{
+      margin-top: 0px;
+      line-height: 22px;
+      font-size: 18px;
+      color: rgb(140, 112, 77);
+    }
+
+    .mimi-s{
       margin-top: 0px;
       line-height: 22px;
       font-size: 18px;
@@ -58,10 +85,35 @@
      border: none;
      border-radius: 8px;
     }
+
+    .mimi-btn{
+      background-color: rgb(0, 187, 255);
+     color: white;
+     margin-left: 155px;
+     margin-top: 25px;
+     padding: 10px 16px 10px 16px;
+     font-weight: bold;
+     font-size: 15px;
+     border: none;
+     border-radius: 8px;
+    }
+
+    .rex-btn{
+      background-color: rgb(0, 187, 255);
+     color: white;
+     margin-left: 140px;
+     margin-top: 25px;
+     padding: 10px 16px 10px 16px;
+     font-weight: bold;
+     font-size: 15px;
+     border: none;
+     border-radius: 8px;
+    }
   </style>
 </head>
 
 <body>
+<divc class="oliver-info">
   <div class="oliver">
     <div class="oliver-pic">
       <img class="oliver-img" src="images/cat pic1.avif" alt="">
@@ -74,6 +126,42 @@
 
     <div class="follow-btn">
       <button class="btn"> Follow</button>
+    </div>
+
+  </div>
+</div>
+  
+<div class="mimi-info">
+  <div class="oliver">
+    <div class="oliver-pic">
+      <img class="oliver-img" src="images/cat pic3.avif" alt="">
+    </div>
+
+    <div class="mimi-d">
+      <p class="oliver-n">Mimi</p>
+      <p class="mimi-s">Sleepy cat popular</p>
+    </div>
+
+    <div class="follow-btn">
+      <button class="mimi-btn"> Follow</button>
+    </div>
+
+  </div>
+</div>
+  
+
+  <div class="oliver">
+    <div class="oliver-pic">
+      <img class="oliver-img" src="images/cat pic4.avif" alt="">
+    </div>
+
+    <div class="rex-d">
+      <p class="oliver-n">Rex</p>
+      <p class="mimi-s">Happy Bulldog popular</p>
+    </div>
+
+    <div class="follow-btn">
+      <button class="rex-btn"> Follow</button>
     </div>
 
   </div>
