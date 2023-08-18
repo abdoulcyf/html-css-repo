@@ -5,8 +5,9 @@ p{
 }
 
 .first-img{
-  width: 300px;
-  display: block;
+  width: 100%; 
+   /* changes 300px to 100% */
+  /* display: block; not neccesary anymore */
 }
 
 .search-bar{
@@ -21,13 +22,15 @@ p{
  margin-bottom: 12px;
 }
 
-.video-preview{
+/* .video-preview{
   width: 300px;
   display: inline-block;
   vertical-align: top;
   margin-right: 15px;
 
-}
+  not neccessary since grid has been used
+
+} */
 
 .profile-pic,
 .profile-pic2{
@@ -55,4 +58,12 @@ p{
 
 .video-author{
   margin-bottom: 4px;
+}
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+
 }
