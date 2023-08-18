@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grid practice exercice</title>
+
+  <style>
+
+    .oliver{
+      align-items: center;
+    }
+
+    .oliver-cat{
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 0px;
+    }
+
+    .oliver-name{
+      font-weight: bold;
+      margin-top: 0px;
+      margin-bottom: 3px;
+      font-size: 18px;
+      width: 100%;
+    }
+
+    .friend{
+      color: rgb(125, 118, 114);
+      margin-top: 0px;
+      margin-bottom: 4px;
+    }
+
+  .add-friend-btn{
+    background-color: blue;
+    color: white;
+    padding: 4px 7px 4px 7px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 0px;
+  }
+
+  .oliver-pic{
+   display: inline-block;
+
+  }
+
+  .oliver-p{
+    max-height: 50px;
+    width: 50px;
+    border-radius: 25px;
+  }
+
+  .oliver-info{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 12px;
+    margin-left: 4px;
+  }
+
+  .oliver-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="oliver-grid">
+    <div class="oliver">
+      <img class="oliver-cat" src="images/cat pic4.avif"alt="">
+  
+    <p class="oliver-name">
+      Oliver
+    </p>
+  
+    <div class="oliver-pic">
+      <img class="oliver-p" src="images/cat pic3.avif" alt="">
+    </div>
+  
+  <div class="oliver-info">
+    <p class="friend">
+      2 mutual friends
+      </p>  
+  </div>
+  <div>
+    <button class="add-friend-btn">
+      Add Friend
+    </button>
+  </div>
+    
+  </div>
+  
+  <div class="oliver">
+    <img class="oliver-cat" src="images/cat pic3.avif"alt="">
+  
+  <p class="oliver-name">
+    Mimi
+  </p>
+  
+  <div class="oliver-pic">
+    <img class="oliver-p" src="images/cat pic3.avif" alt="">
+  </div>
+  
+  <div class="oliver-info">
+    <p class="friend">
+      3 mutual friends
+      </p>
+  </div>
+  <div>
+    <button class="add-friend-btn">
+      Add Friend
+    </button>
+  </div>
+  </div>
+  
+  <div class="oliver">
+    <img class="oliver-cat" src="images/cat pic1.avif"alt="">
+  
+  <p class="oliver-name">
+    Rex
+  </p>
+  
+  
+  <div class="oliver-pic">
+    <img class="oliver-p" src="images/cat pic3.avif" alt="">
+  </div>
+  
+  <div class="oliver-info">
+    <p class="friend">
+      4 mutual friends
+      </p>
+  </div>
+  
+  <div>
+    <button class="add-friend-btn">
+      Add Friend
+    </button>
+  </div>
+  
+  </div>
+  </div>
+
+  
+
+</body>
+
+</html>

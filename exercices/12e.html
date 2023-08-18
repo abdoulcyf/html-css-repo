@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox practice exercice  2</title>
+
+    <style>
+      .header{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+
+      .first-line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      .second-line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      .third-line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      button{
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+   <div class="header">
+    <div class="first-line">
+      <div>Home</div>
+      <div><button>14</button></div>
+    </div>
+
+    <div class="second-line">
+      <div>Notifications</div>
+    <div><button>3</button></div>
+    </div>
+
+    <div class="third-line">
+      <div>Messages</div>
+    <div><button>5</button></div>
+    </div>
+  
+   </div>
+  </body>
+</html>

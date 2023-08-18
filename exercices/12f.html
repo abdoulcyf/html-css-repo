@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox practice exercice  3</title>
+
+    <style>
+
+      .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(117, 205, 199) ;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .first-section{
+        color: white;
+        font-size: 20px;
+      }
+
+      .text-box{
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 75px;
+        max-width: 300px;
+      }
+
+      button{
+        border: 2px solid white;
+        color: white;
+        padding: 5px;
+        background-color:rgb(117, 205, 199) ;
+      }
+
+      .text-box{
+      width: 500px;
+      margin: 12px 0px 12px 0px;
+      border-radius: 50px;
+      border: none;
+      height: 30px;
+      padding-left: 20px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+   <div class="header">
+    <div class="first-section">Home</div>
+
+    <input class="text-box" type="text" placeholder="Search">
+
+      <button class="btn">Download</button>
+   </div>
+  </body>
+</html>
