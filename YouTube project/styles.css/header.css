@@ -4,6 +4,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 100;
+
+  background-color: white;
+  border-bottom: 1px solid rgb(219, 212, 212);
 }
 
 .left-section{
@@ -33,7 +43,7 @@
 
 .search-bar{
   flex: 1;
-  height: 36px;
+  height: 35px;
   padding-left: 10px;
   font-size: 16px;
   border: 1px solid rgb(196, 194, 194);
@@ -57,6 +67,46 @@
   margin-right: 10px;
 }
 
+.search-bnt, .micro-btn,
+.upload-icon-container,
+.apps-icon-container,
+.notifications-icon-container,
+.channel-pic-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-btn .tooltip, 
+.micro-btn .tooltip,
+.upload-icon-container .tooltip,
+.apps-icon-container .tooltip,
+.notifications-icon-container .tooltip,
+.channel-pic-container .tooltip{
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,
+.micro-btn:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip,
+.channel-pic-container:hover .tooltip{
+  opacity: 1;
+}
+
 .micro-btn{
   height: 40px;
   width: 40px;
@@ -66,16 +116,15 @@
 }
 
 .search-icon{
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
  
   
 }
 
 .micro-icon{
-  height: 35px;
-  width: 30px;
-  margin-top: 4px;
+  height: 25px;
+  width: 25px;
 }
 
 
@@ -103,4 +152,20 @@
 .channel-pic{
   height: 36px;
   border-radius: 18px;
+}
+
+.notifications-icon-container{
+  position: relative;
+}
+
+.notifications-count{
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(121, 6, 6);
+  color: white;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  padding: 2px 5px 2px 5px;
+  border-radius: 10px;
 }

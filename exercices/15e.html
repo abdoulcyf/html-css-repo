@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Postion practice 15a</title>
+
+    <style>
+      .position-relative-container{
+        position: relative;
+        display: inline-block;
+        border: 2px solid gray;
+        padding: 30px;
+        background-color: rgb(176, 139, 90);
+        top: 30px;
+        z-index: 1;
+      }
+
+      .promo{
+        position: absolute;
+        top: 3px;
+        right: 0px;
+        background-color: black;
+        color: white;
+        padding: 2px 4px 2px 4px;
+      }
+
+      .add-btn{
+        display: flex;
+        background-color: rgb(31, 70, 104);
+      }
+
+      .add-to-cart-btn{
+       position: absolute;
+       top: 180px;
+       left: 100px;
+
+       background-color: lightgoldenrodyellow ;
+       padding: 10px;
+       font-size: 15px;
+      }
+
+    </style>
+  </head>
+
+  <body style="
+  height: 3000px;
+  ">
+  <div class="position-relative-container">
+    <img src="images/T-shirt1.jpeg" alt="">
+    <div class="promo">20% OFF</div>
+  </div>
+
+  <div class="position-relative-container">
+    <img src="images/T-shirt1.jpeg" alt=""> 
+    <div class="add-btn">
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+    <div class="promo">20% OFF</div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Practice exoe</title>
+
+    <style>
+
+.cat-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+      }
+
+      .left-sidebar{
+        position: fixed;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .cat1{
+        margin-bottom: 7px;
+      }
+
+      .cat2{
+        margin-top: 0;
+        margin-bottom: 7px;
+      }
+
+      .second-s{
+        position: fixed;
+        left: 70px;
+      }
+
+      .info{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .elements{
+        color: gray;
+        font-size: 18px;
+      }
+
+      button{
+        border: none;
+      }
+    </style>
+
+      
+
+
+      
+
+  <body>
+    <div class="left-sidebar"> <img class="cat-img cat1" src="images/cat pic1.avif" alt="">
+    <img class="cat-img cat2" src="images/cat pic.avif" alt="">
+    <img class="cat-img cat3" src="images/cat pic3.avif" alt="">
+    </div>
+
+    <div class="second-s">
+      <div class="info">
+        <div>Info</div>
+        <button onclick="
+        alert('button clicked')
+        "> &plus;</button>
+      </div>
+
+      <div class="elements">
+        <p>&#35;new-videos</p>
+        <p>&#35;Updates</p>
+        <p>&#35;faq</p>
+      </div>
+      
+    </div>
+  </body>
+
+
+</html>

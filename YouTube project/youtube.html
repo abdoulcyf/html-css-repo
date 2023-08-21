@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles.css/youtube.css">
   <link rel="stylesheet" href="styles.css/header.css">
   <link rel="stylesheet" href="styles.css/general.css">
+  <link rel="stylesheet" href="styles.css/sidebar.css">
 
 </head>
 
@@ -24,26 +25,68 @@
       <input class="search-bar" type="text" placeholder="Search">
       <button class="search-btn">
         <img class="search-icon" src="icons/search icon.png" alt="">
+        <div class="tooltip">Search</div>
       </button>
-      <button class="micro-btn" >
+      <button class="micro-btn">
         <img class="micro-icon" src="icons/microphone.jpg" alt="">
+        <div class="tooltip"> Search with your voice</div>
       </button>
     </div>
     <div class="right-section">
-     <img class="upload-icon" src="icons/video.png" alt="">
-     <img class="apps-icon" src="icons/apps icon.png" alt="">
-     <img class="noti-icon" src="icons/notification.jpg" alt="">
-     <img class="channel-pic" src="images/channel pic.jpg" alt="">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icons/video.png" alt="">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="apps-icon-container">
+        <img class="apps-icon" src="icons/apps icon.png" alt="">
+        <div class="tooltip">Your Apps</div>
+      </div>
+      <div class="notifications-icon-container">
+        <img class="noti-icon" src="icons/notification.jpg" alt="">
+        <div class="tooltip">Notifications</div>
+        <div class="notifications-count">3</div>
+      </div>
+      <div class="channel-pic-container">
+        <img class="channel-pic" src="images/channel pic.jpg" alt="">
+        <div class="tooltip">Your profile</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-link">
+      <img src="images/home-icon.png" alt="">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/explore icon.webp" alt="">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/subscription icon.png" alt="">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/original icon.png" alt="">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/music.png" alt="">
+      <div>YouTube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/Library.png" alt="">
+      <div>Libray</div>
     </div>
   </div>
 
   <div class="video-grid">
-
     <div class="video-preview">
-
       <div class="video-info">
         <img class="first-img" src="images/second-img.avif" alt="">
+        <div class="video-time">14:20</div>
       </div>
+
 
       <div class="second-img-row">
         <div class="video-info-grid">
@@ -65,11 +108,13 @@
     </div>
 
     <div class="video-preview">
-      <div class="first-img-row"> <img class="first-img" src="images/first img.avif" alt="">
+      <div class="video-info">
+        <img class="first-img" src="images/first img.avif" alt="">
+        <div class="video-time">14:20</div>
       </div>
 
       <div class="video-info-grid">
-        <div class="profile-picture">
+        <div class="">
           <img class="profile-pic" src="images/Profile pic.avif" alt="">
         </div>
         <div class="video-info">
@@ -88,6 +133,7 @@
 
       <div class="video-info">
         <img class="first-img" src="images/Thumnail-p 3.jpeg" alt="">
+        <div class="video-time">14:20</div>
       </div>
 
       <div class="second-img-row">
@@ -98,7 +144,7 @@
 
           <div class="video-info">
             <p class="video-title">
-             Crazy Tik Toks Taken Moments Before DISASTER
+              Crazy Tik Toks Taken Moments Before DISASTER
             </p>
 
             <p class="video-author">SSSniperWolf
@@ -110,7 +156,8 @@
     </div>
 
     <div class="video-preview">
-      <div class="first-img-row"> <img class="first-img" src="images/Thumnail p-4.jpeg" alt="">
+      <div class="video-info"> <img class="first-img" src="images/Thumnail p-4.jpeg" alt="">
+        <div class="video-time">14:20</div>
       </div>
 
       <div class="video-info-grid">
@@ -119,7 +166,7 @@
         </div>
         <div class="video-info">
           <p class="video-title">
-           The Simplest Math Problem No One Can Solve - Collatz
+            The Simplest Math Problem No One Can Solve - Collatz
           </p>
 
           <p class="video-author">Veritanium</p>
@@ -133,6 +180,7 @@
 
       <div class="video-info">
         <img class="first-img" src="images/Thumnail-p 5.jpeg" alt="">
+        <div class="video-time">14:20</div>
       </div>
 
       <div class="second-img-row">
@@ -155,7 +203,8 @@
     </div>
 
     <div class="video-preview">
-      <div class="first-img-row"> <img class="first-img" src="images/Thumnail-p 6.jpeg" alt="">
+      <div class="video-info"> <img class="first-img" src="images/Thumnail-p 6.jpeg" alt="">
+        <div class="video-time">14:20</div>
       </div>
 
       <div class="video-info-grid">

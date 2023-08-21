@@ -4,10 +4,16 @@ p{
   margin-bottom: 0px;
 }
 
+.video-info{
+  position: relative;
+  margin-bottom: 8px;
+}
+
 .first-img{
   width: 100%; 
    /* changes 300px to 100% */
   /* display: block; not neccesary anymore */
+  
 }
 
 .video-title{
@@ -15,7 +21,7 @@ p{
  font-size: 14px;
  font-weight: 500;
  line-height: 20px;
- margin-bottom: 12px;
+ margin-bottom: 10px;
 }
 
 /* .video-preview{
@@ -30,7 +36,7 @@ p{
 
 .profile-pic,
 .profile-pic2{
-  width: 35px;
+  width: 36px;
   height: 35px;
   border-radius: 0px;
   border-radius: 50px;
@@ -41,7 +47,7 @@ p{
   grid-template-columns: 50px 1fr;
 }
 
-.first-img-row,
+.first-img,
 .second-img-row{
   margin-bottom: 12px;
 }
@@ -62,4 +68,17 @@ p{
   column-gap: 16px;
   row-gap: 40px;
 
+}
+
+.video-time{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 18px;
+  right: 5px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
 }
